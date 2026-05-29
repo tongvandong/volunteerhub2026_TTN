@@ -2,3 +2,13 @@
 **/bin/
 **/obj/
 **/*.csproj.user
+**/node_modules/
+**/dist/
+**/.vite/
+**/coverage/
+**/TestResults/
+**/artifacts/
+**/*.log
+**/.env
+**/.env.local
+**/.DS_Store
