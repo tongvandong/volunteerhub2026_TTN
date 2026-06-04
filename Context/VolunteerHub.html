@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- saved from url=(0255)https://itest.com.vn/lects/webappdev/mockproj/VolunteerHub.htm?fbclid=IwY2xjawPlBZBleHRuA2FlbQIxMABicmlkETFDWnBrNFBraVFvUGx3UThDc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiTLmFrN57DPwOoAMVMGC5VFbMz4iZTxtPUgBLU4L8Jf2bMbrSw9JBu8-EzW_aem_8FE6btvkSu1U4ZCL558BIA -->
+<html><script src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/content/location/location.js" id="nimlmejbmnecnaghgmbahmbaddhjbecg"></script><script src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/libs/extend-native-history-api.js"></script><script src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="{&quot;blacklistIframeSrc&quot;:[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//www.google.com/recaptcha/enterprise/anchor&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;,&quot;//www.ukrnafta.com/data/map/&quot;,&quot;//maps.google.com/maps&quot;,&quot;//www.openstreetmap.org/export/embed.html&quot;,&quot;//www.google.com/maps/d/u/3/embed&quot;,&quot;//itm.ebaydesc.com/itmdesc&quot;,&quot;//books.google.com/books&quot;,&quot;//embed.podcasts.apple.com&quot;,&quot;//www.paypal.com/smartchat&quot;,&quot;//www.centurylink.com/assets/includes/common/sfChatiFrame.html&quot;,&quot;//macmillan-prod-gen.ada.support/embed&quot;,&quot;//macmillan-prod-gen.ada.support/chat&quot;,&quot;//ctl-consumer.my.site.com/&quot;],&quot;whitelistDomainsForPostBody&quot;:[&quot;youtube.com&quot;]}" data-dynamic-id="c9220e98-de25-456a-b152-6ac6eeb8f47b" src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/executors/200.js"></script>
+	
+	<title>VolunteerHub</title>
+	<style>
+		ol {margin-bottom:0in;}
+		ul {margin-bottom:0in;}
+		body {padding:0px;margin:0px;}
+		div.container {max-width:768px;margin-left:auto;margin-right:auto;background-color:#fafafa;padding:50px;}
+		p.n {text-align:justify;}
+	</style>
+<script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="c9220e98-de25-456a-b152-6ac6eeb8f47b" src="chrome-extension://nimlmejbmnecnaghgmbahmbaddhjbecg/executors/101.js"></script></head><body bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRkaGpiZWNnIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZW5hYmxlZCIsIkNPTkZJRyI6ImRpc2FibGVkIn0sInZlcnNpb24iOiIyLjAuNDciLCJzY29yZSI6MjAwNDcwfV0=" __processed_5a3e03ed-0800-4a9a-97c5-24ef5b5f7028__="true">
+<div class="container" bis_skin_checked="1">
+	<div style="height:140px;padding-top:50px;" bis_skin_checked="1">
+	<div style="font-weight:bold;font-size:larger;" bis_skin_checked="1">Bài tập lớn</div>
+	<h1>INT3306 - Phát triển ứng dụng web</h1>
+	<div bis_skin_checked="1">Fall 2025</div>
+	</div>
+<div bis_skin_checked="1">
+
+<h2><span>VolunteerHub</span></h2>
+
+<p>Nhiệt huyết tình nguyện viên.</p>
+
+
+
+<h3>1. Hướng dẫn thực hiện</h3>
+
+	<p>- Thực hiện theo nhóm (team) 3 sinh viên.</p>
+	<p>- Tự do lựa chọn công nghệ, framework, library cho cả frontend và backend.</p>
+	<p>- Trình bày sản phẩm tại buổi thi vấn đáp (demo trực tiếp, không cần slide, doc).</p>
+
+
+
+<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;
+ ;">
+ <tbody><tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><b><span>STT</span></b></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border:solid black 1.0pt;
+  ;border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p><b><span>Tiêu chí chấm điểm</span></b></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border:solid black 1.0pt;
+  ;border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><b><span>Hệ số</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>1</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Chức  năng và các features đã cài đặt <b></b></span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.35<b></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>2</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Thiết kế: Logic, dễ sử dụng</span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.1<b></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>3</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Giao diện: Responsive, đẹp, hiện đại, có bản sắc, đặc trưng nhận dạng thương hiệu nổi bật</span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>4</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Hiệu  năng: Sử dụng fetch hoặc AJAX để tải bộ phận, không tải lại, backend API, sử   dụng dữ liệu JSON, cập nhật DOM trên frontend.</span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.1<b></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>5</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Phong cách lập trình: Sử dụng mẫu thiết kế, tách biệt mã tạo giao diện và mã xử lý nghiệp vụ, tổ chức gói thư viện, trình bày và chú thích mã, ... </span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.05<b></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>6</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Xử lý nhập liệu: Kiểm tra hợp thức, tự động điền, gợi ý, chuyển đổi, ... </span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.05<b></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>7</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>An ninh: Xác thực, quản lý phiên, điều khiển truy cập, mã hóa, ... </span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.05<b></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>8</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Viết lại và/hoặc định tuyến URL </span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.05<b></b></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="49" valign="top" style="width:36.9pt;border:solid black 1.0pt;
+  ;border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>9</span></p>
+  </td>
+  <td width="510" valign="top" style="width:382.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p><span>Thao tác CSDL theo lập trình hướng đối và độc lập CSDL </span></p>
+  </td>
+  <td width="79" valign="top" style="width:59.4pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt">
+  <p align="center" style="text-align:center"><span>0.05<b></b></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p><b><span></span></b></p>
+
+<h3>2. Mô tả nghiệp vụ</h3>
+
+<p class="n">
+	Phát triển ứng dụng web hỗ trợ tổ chức và quản lý các hoạt động tình nguyện (trồng cây, dọn rác, từ thiện, bình dân học vụ số, ...). Hệ thống có các vai trò: tình nguyện viên, quản lý sự kiện, và admin.
+</p>
+
+
+
+
+<h3>3. Yêu cầu chức năng theo vai trò</h3>
+
+<h4>Tình nguyện viên</h4>
+- <b>Đăng ký/Đăng nhập</b>: Tạo tài khoản, đăng nhập bằng email/password. <br>
+- <b>Xem sự kiện</b>: Xem danh sách sự kiện (tên, ngày, địa điểm, mô tả), lọc theo thời gian/danh mục.<br>
+- <b>Đăng ký sự kiện</b>: Đăng ký tham gia sự kiện, nhận thông báo xác nhận.<br>
+- <b>Thoái đăng sự kiện</b>: Hủy đăng ký trước khi sự kiện diễn ra.<br>
+- <b>Xem lịch sử tham gia</b>: Xem danh sách sự kiện đã tham gia, trạng thái hoàn thành.<br>
+- <b>Nhận thông báo</b>: Nhận thông báo trạng thái đăng ký/hoàn thành (Web Push API).<br>
+- <b>Truy cập kênh trao đổi</b>: Post bài, comment, like trên kênh sự kiện (tương tự wall Facebook), chỉ sau khi sự kiện được duyệt.<br>
+- <b>Xem Dashboard</b>: Xem tổng hợp sự kiện liên quan (mới công bố, có tin bài mới), sự kiện thu hút (tăng thành viên/trao đổi/like nhanh).
+
+<h4>Quản lý sự kiện</h4>
+- <b>Đăng ký/Đăng nhập</b>: Tạo tài khoản, đăng nhập bằng email/password.<br>
+- <b>Quản lý sự kiện</b>: Tạo, sửa, xóa sự kiện (tên, ngày, địa điểm, mô tả). Validate input (Joi/Yup).<br>
+- <b>Xác nhận đăng ký</b>: Duyệt/hủy đăng ký của tình nguyện viên.<br>
+- <b>Đánh dấu hoàn thành</b>: Cập nhật trạng thái hoàn thành cho tình nguyện viên sau sự kiện.<br>
+- <b>Xem báo cáo</b>: Xem danh sách tình nguyện viên tham gia sự kiện.<br>
+- <b>Truy cập kênh trao đổi</b>: Post bài, comment, like trên kênh sự kiện (tương tự wall Facebook), chỉ sau khi sự kiện được duyệt.<br>
+- <b>Xem Dashboard</b>: Xem tổng hợp sự kiện liên quan (mới công bố, có tin bài mới), sự kiện thu hút (tăng thành viên/trao đổi/like nhanh).
+
+<h4>Admin</h4>
+- <b>Đăng ký/Đăng nhập</b>: Tạo tài khoản, đăng nhập bằng email/password.<br>
+- <b>Quản lý sự kiện</b>: Duyệt/xóa sự kiện do quản lý sự kiện tạo.<br>
+- <b>Quản lý người dùng</b>: Xem, khóa/mở tài khoản tình nguyện viên/quản lý sự kiện.<br>
+- <b>Xuất dữ liệu</b>: Export danh sách sự kiện/tình nguyện viên (CSV/JSON).<br>
+- <b>Xem Dashboard</b>: Xem tổng hợp sự kiện liên quan (mới công bố, có tin bài mới), sự kiện thu hút (tăng thành viên/trao đổi/like nhanh).
+
+
+ 
+ 
+ <h3>GHI CHÚ</h3>
+ <p>
+ - Với mỗi sự kiện sau khi được duyệt, hệ thống sẽ tự động mở một kênh trao đổi riêng cho sự kiện với tính năng tương tự như tường của Facbook để các thành viên post bài và trao đổi về sự kiện đó.
+</p>
+ <p>- Sơ đồ luồng nghiệp vụ tóm tắt như sau:</p>
+ <img src="./VolunteerHub_files/VolunteerHub.svg">
+
+<p style="text-align:center">------- Hết -------</p>
+
+</div>
+</div>
+
+<img id="translator-icon" src="chrome-extension://eppoicilncalfjihogoiemleemaehbig/icons/icon128.png" style="display: none; top: 627.25px; left: 1263px;"><div id="translator-container" style="display: none;" bis_skin_checked="1">
+<div class="rapid-header" bis_skin_checked="1">
+  <img сlass="rapid-logo" src="chrome-extension://eppoicilncalfjihogoiemleemaehbig/icons/icon128.png">
+  <img сlass="rapid-icon" id="rapid-copy" src="chrome-extension://eppoicilncalfjihogoiemleemaehbig/icons/copy.svg">
+</div><div id="rapid-text-wrapper" bis_skin_checked="1"><span></span></div>
+
+<div class="rapid-footer" bis_skin_checked="1">
+  <span id="rapid-first-language">ENG</span>
+  <img id="rapid-arrow-icon" src="chrome-extension://eppoicilncalfjihogoiemleemaehbig/icons/r-arrow.svg">
+  <span id="rapid-second-language">FRN</span>
+</div></div></body></html>
