@@ -6,6 +6,7 @@ VolunteerHub là cổng sự kiện tình nguyện phục vụ môn Thực tập
 
 - Môn học: Thực tập nhóm
 - Giảng viên: Phan Nguyên Hải
+- Bộ môn: Công nghệ phần mềm
 - Đề tài: VolunteerHub
 - Repository: https://github.com/taoladong/volunteerhub2026_TTN
 - Trello: https://trello.com/b/q3SPEszi/b%E1%BA%A3ng-trello-c%E1%BB%A7a-toi
