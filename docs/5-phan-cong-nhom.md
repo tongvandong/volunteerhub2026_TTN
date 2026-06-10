@@ -4,7 +4,7 @@
 
 | STT | Họ tên | Vai trò | GitHub | Phụ trách |
 |---|---|---|---|---|
-| 1 | Tống Văn Đông | Nhóm trưởng | taoladong | Sự kiện / Đăng ký / Điểm danh / Chứng chỉ |
+| 1 | Tống Văn Đông | Nhóm trưởng | tongvandong | Sự kiện / Đăng ký / Điểm danh / Chứng chỉ |
 | 2 | Phạm Tiến Dũng | Thành viên | dung | Xác thực / Hồ sơ / Xác minh / Phân quyền |
 | 3 | Hồ Sỹ Vinh | Thành viên | vinh | Ủng hộ / Đóng góp / Tài trợ / Tài chính |
 
@@ -175,7 +175,7 @@ fix(ui): sua loi build frontend
 
 | Công cụ | Mục đích | Link |
 |---|---|---|
-| GitHub | Quản lý mã nguồn | https://github.com/taoladong/volunteerhub2026_TTN |
+| GitHub | Quản lý mã nguồn | https://github.com/tongvandong/volunteerhub2026_TTN |
 | Trello | Quản lý công việc | https://trello.com/b/q3SPEszi/b%E1%BA%A3ng-trello-c%E1%BB%A7a-toi |
 | Google Drive | Lưu tài liệu, báo cáo | https://drive.google.com/drive/u/0/folders/1qnu4XJEBNgHDcGQzNKacwwpaZxygxAdZ |
 | Messenger/Zalo | Giao tiếp hàng ngày | (link group) |

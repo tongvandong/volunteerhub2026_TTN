@@ -8,9 +8,9 @@ VolunteerHub là cổng sự kiện tình nguyện phục vụ môn Thực tập
 - Giảng viên: Phan Nguyên Hải
 - Bộ môn: Công nghệ phần mềm
 - Đề tài: VolunteerHub
-- Repository: https://github.com/taoladong/volunteerhub2026_TTN
+- Repository: https://github.com/tongvandong/volunteerhub2026_TTN
 - Trello: https://trello.com/b/q3SPEszi/b%E1%BA%A3ng-trello-c%E1%BB%A7a-toi
-- Google Drive: [https://drive.google.com/drive/u/0/folders/1qnu4XJEBNgHDcGQzNKacwwpaZxygxAdZ](https://drive.google.com/drive/folders/1TcJYLvHBmMjqnEehKxoPUKJ-0zl3bis7?usp=drive_link)
+- Google Drive: https://drive.google.com/drive/u/0/folders/1qnu4XJEBNgHDcGQzNKacwwpaZxygxAdZ
 
 ## Phân công
 
@@ -29,4 +29,10 @@ VolunteerHub là cổng sự kiện tình nguyện phục vụ môn Thực tập
 - `docs/final-submission`: báo cáo, slide, biên bản và tài liệu nộp cuối.
 
 Mỗi thành viên làm trên nhánh riêng, push nhánh cá nhân và tạo Pull Request vào `master` sau khi đã kiểm tra phần việc.
+
+## Tài liệu kỹ thuật
+
+- `docs/3-thiet-ke-he-thong.md`: kiến trúc hệ thống, service, database và các luồng nghiệp vụ chính.
+- `docs/4-huong-dan-cai-dat.md`: yêu cầu môi trường, cấu hình database, build và chạy local.
+- `docs/internal/`: các kế hoạch chi tiết cho phỏng vấn, quản lý sự kiện, layout, public event và admin.
 
