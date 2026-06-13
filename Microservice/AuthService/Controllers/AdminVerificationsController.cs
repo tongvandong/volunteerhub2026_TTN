@@ -32,6 +32,7 @@ namespace AuthService.Controllers
         // ================= Volunteer KYC Endpoints =================
 
         [HttpGet("api/admin/volunteer-kyc")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetVolunteerKycRequests([FromQuery] string? status = "PendingVerification")
         {
             var query = _context.VolunteerProfiles

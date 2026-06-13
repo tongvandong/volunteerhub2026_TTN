@@ -111,7 +111,7 @@ public class AuthController : ControllerBase
 
         var AuthRefreshToken = await _dbContext.AuthRefreshTokens
             .Include(token => token.User)
-            .FirstOrDefaultAsync(token => token.Token == request.RefreshToken, cancellationToken);
+            .FirstOrDefaultAsync(token => token.TokenHash == request.RefreshToken, cancellationToken);
 
         if (AuthRefreshToken is null ||
             AuthRefreshToken.RevokedAt is not null ||
@@ -137,7 +137,7 @@ public class AuthController : ControllerBase
         var userId = User.GetRequiredUserId();
         var AuthRefreshToken = await _dbContext.AuthRefreshTokens
             .FirstOrDefaultAsync(
-                token => token.UserId == userId && token.Token == request.RefreshToken && token.RevokedAt == null,
+                token => token.UserId == userId && token.TokenHash == request.RefreshToken && token.RevokedAt == null,
                 cancellationToken);
 
         if (AuthRefreshToken is not null)
